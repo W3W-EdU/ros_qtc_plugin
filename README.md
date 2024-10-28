@@ -33,6 +33,18 @@ You can install Qt Creator with the ROS corresponding plugin via the [snap store
 sudo snap install qtcreator-ros --classic
 ```
 
+### Debian Qt Creator and Plugin Installation
+
+Qt Creator can be installed via debian officially from [Qt](https://download.qt.io/official_releases/qtcreator). The debian is located in the `cpack_experimental` folder found under each version. Below is an example showing the steps to install both Qt Creator and Plugin.
+
+```bash
+wget https://download.qt.io/official_releases/qtcreator/14.0/14.0.2/cpack_experimental/qtcreator-opensource-linux-x86_64-14.0.2.deb
+sudo dpkg -i qtcreator-opensource-linux-x86_64-14.0.2.deb 
+echo 'export PATH=$PATH:/opt/qt-creator/bin' >> ~/.bashrc 
+wget https://github.com/ros-industrial/ros_qtc_plugin/releases/download/14.2/ROSProjectManager-14.2-Linux-x86_64.deb 
+sudo dpkg -i ROSProjectManager-14.2-Linux-x86_64.deb
+```
+
 ### Manual Qt Creator and Plugin Installation
 
 Qt Creator can be installed via the official [online](https://www.qt.io/download-qt-installer-oss) and [offline](https://www.qt.io/offline-installers) installer.
