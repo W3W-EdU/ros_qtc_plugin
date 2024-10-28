@@ -35,7 +35,7 @@ sudo snap install qtcreator-ros --classic
 
 ### Debian Qt Creator and Plugin Installation
 
-Qt Creator can be installed via debian officially from [Qt](https://download.qt.io/official_releases/qtcreator). The debian is located in the `cpack_experimental` folder found under each version. Below is an example showing the steps to install both Qt Creator and Plugin.
+Qt Creator can be installed via debian officially from [Qt](https://download.qt.io/official_releases/qtcreator). The debian is located in the `cpack_experimental` folder found under each version. Below is an example showing the steps to install both Qt Creator and Plugin. After going through the steps below you must log out and back in so the profile changes are active. Afterwards your system should be able to locate Qt Creator and allow you to add it to your favorits.
 
 ```bash
 wget https://download.qt.io/official_releases/qtcreator/14.0/14.0.2/cpack_experimental/qtcreator-opensource-linux-x86_64-14.0.2.deb
