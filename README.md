@@ -41,6 +41,8 @@ Qt Creator can be installed via debian officially from [Qt](https://download.qt.
 wget https://download.qt.io/official_releases/qtcreator/14.0/14.0.2/cpack_experimental/qtcreator-opensource-linux-x86_64-14.0.2.deb
 sudo dpkg -i qtcreator-opensource-linux-x86_64-14.0.2.deb 
 echo 'export PATH=$PATH:/opt/qt-creator/bin' >> ~/.bashrc 
+echo 'export PATH=$PATH:/opt/qt-creator/bin' >> ~/.profile 
+echo 'export XDG_DATA_DIRS=$XDG_DATA_DIRS:/opt/qt-creator/share/' >> ~/.profile 
 wget https://github.com/ros-industrial/ros_qtc_plugin/releases/download/14.2/ROSProjectManager-14.2-Linux-x86_64.deb 
 sudo dpkg -i ROSProjectManager-14.2-Linux-x86_64.deb
 ```
